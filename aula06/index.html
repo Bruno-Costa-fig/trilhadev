@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch</title>
+</head>
+
+<body>
+  <script>
+    let periodo_dia = "tarde";
+    debugger
+
+    switch (periodo_dia.toUpperCase()) {
+      case "TARDE":
+        console.log("Boa tarde");
+        break;
+      case "MANHÃ":
+        console.log("Bom dia");
+        return
+        break;
+      case "NOITE":
+        console.log("Boa noite");
+        break;
+      default: // else do switch
+        console.log("Que horas são? 🤔")
+    }
+  </script>
+</body>
+
+</html>
