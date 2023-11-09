@@ -1,0 +1,4 @@
+- falar sobre reset css
+- falar sobre flexbox
+- falar sobre padrões de nomenclatura de classes
+- falar sobre estilização herdada

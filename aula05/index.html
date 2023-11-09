@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- importação de arquivos css -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ISSO É UM COMENTÁRIO */
+    /* .container {
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+    } */
+
+    #h1-id {
+      color: red; /* dando cor ao texto */
+    }
+
+    .titulo {
+      color: blue;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    p {
+      color: green;
+    }
+
+    .bloco {
+      width: 200px;
+      height: 200px;
+      margin: 20px 10px;
+      padding: 20px 20px;
+      color: white;
+      background-color: red;
+      border: 5px solid blue;
+      border-radius: 10px;
+    }
+
+    .botao {
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bolder;
+      cursor: pointer;
+    }
+
+    .botao:hover {
+      background-color: blue;
+      transition: 1s ease-in-out;
+      transform: scale(1.5);
+    }
+
+    .link {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+
+    <h1 id="h1-id">Introdução ao CSS - aula 05</h1>
+    <h1 class="titulo">Titulo dentro do p</h1>
+    <h1>Terceiro exemplo de h1</h1>
+    
+    <p class="titulo">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium totam omnis dicta suscipit voluptas quidem iure, enim corporis dolorem libero eos hic voluptates officiis minus delectus alias repudiandae autem expedita?
+  </p>
+  <p class="bloco">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium totam omnis dicta suscipit voluptas quidem iure, enim corporis dolorem libero eos hic voluptates officiis minus delectus alias repudiandae autem expedita?
+  </p>
+
+  <a class="link" href="https://linkedin.com">Linkedin</a>
+
+  <button class="botao">Cadastrar</button>
+
+</main>
+  <!-- importação de javascript externo -->
+  <script src="script.js"></script>
+  <script>
+    // let contador = 0;
+
+    // while(contador <= 10){
+    //   console.log(contador);
+
+    //   // contador = contador + 1;
+    //   // contador += 1;
+    //   contador++;
+    // }
+
+    // let contador = 0;
+
+    // do {
+    //   console.log(contador);
+
+    //   // contador = contador + 1;
+    //   // contador += 1;
+    //   contador++; // incremento
+    // } while(contador <= 10)
+
+    // let resultado = true;
+    // let soma = 0;
+
+    // do {
+    //   soma = soma + Number(prompt("Digite um número: "));
+    //   let resposta = prompt("Você quer continuar? (Digite s para 'sim' e n para 'não'): ");
+    //   if(resposta != 's'){
+    //     resultado = false;
+    //   }
+    // } while(resultado)
+
+    // alert("A soma dos números é igual a " + soma);
+
+    // variavel de controle; condição; incremento
+    // for(let contador = 0;contador <= 10;contador++){
+    //   console.log(contador);
+    // }
+
+  </script>
+</body>
+</html>
