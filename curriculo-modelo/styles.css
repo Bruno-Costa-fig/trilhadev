@@ -74,7 +74,7 @@
 
 #sobre {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   padding: 4em;
 
   display: flex;
@@ -83,6 +83,7 @@
 
 #sobre img {
   width: 30%;
+  height: fit-content;
   border-radius: 15px;
   right: 0;
   box-shadow: 2px 2px 1em rgb(157, 156, 156);
@@ -128,7 +129,7 @@
 
 #formacoes {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   padding: 4em;
 }
 
