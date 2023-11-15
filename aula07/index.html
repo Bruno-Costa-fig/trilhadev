@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Aula 07</title>
 </head>
 <body>
+  <h1>Aula 07</h1>
+
+  <div id="divdomouse"
+  onmouseout="quandoMouseOut()" 
+  onmouseenter="quandoMouseEnter()" style="width: 200px; background: red;">Div do mouse enter</div>
+
+  <button onclick="quandoClicar()">Clique aqui</button>
+
+
+  <script>
+    // funções do window
+    // let resultado = window.alert("Exemplo de alert") // retorna undefined
+    // let resultado = window.prompt("Digite seu nome: ") // retorna string
+    // let resultado = confirm("Você está gostando da trilha dev? ") // retorna booleano
+    // console.log(resultado)
+    // debugger
+    // function soma(num1, num2){
+    //   return Number(num1) + Number(num2)
+    // }
+
+    // let numero1 = Number(prompt("Digite o primeiro número: "))
+    // let numero2 = Number(prompt("Digite o segundo número: "))
+
+    // let resultado = soma(numero1, numero2);
+    // console.log("O resultado da soma é " + resultado)
+
+
+    // let nome = "Bruno Costa"
+    // console.log("Nome: " + nome)
+
+    // let arrayNomes = ["Maria", "Breno", "Carlos"]
+    // console.log("Array de nomes: " + arrayNomes[3])
+
+    // const arrayNomes = []
+    // console.log(arrayNomes)
+    // arrayNomes.push("Maria")
+    // console.log(arrayNomes)
+    // arrayNomes.push("Breno")
+    // console.log(arrayNomes)
+    // arrayNomes.pop()
+    // console.log(arrayNomes)
+    // console.log(arrayNomes.length)
+
+    // atividade arrays
+  //   let numeros = []
+  //   function lerNumeros(){
+
+  //     for(let i = 0; i < 5; i++){
+  //       let num = Number(prompt("Digite um número: "));
+
+  //     let jaTemNumero = numeros.filter(function (n) {
+  //       return n == num
+  //     })
+      
+  //     if(jaTemNumero.length == 0){
+  //       numeros.push(num)
+  //     } else {
+  //       alert("Esse número já existe")
+  //     }
+  //   }
+  // }
+
+  //   console.log(numeros.sort())
+
+
+
+  // objetos
+  //let nome = "Bruno"
+  //const usuario = {
+    //nome: false, // chave: valor
+    //email: ""
+    //idade
+  //}
+  //console.log(usuario.nome)
   
+  
+  // usuario.nome = "Bruno Costa"
+  // usuario.idade = 24
+
+  // console.log(usuario.nome)
+  // console.log(usuario.idade)
+  // console.log(usuario)
+
+  // eventos
+  function quandoClicar(){
+    alert("Clicou")
+  }
+  
+  let divdomouse = window.document.getElementById("divdomouse")
+
+  function quandoMouseEnter(){
+    // alert("Mouse enter")
+    divdomouse.innerText = "mouse entrou"
+    divdomouse.style.background = "green"
+  }
+  
+  function quandoMouseOut(){
+    divdomouse.innerText = "mouse saiu"
+    divdomouse.style.background = "red"
+  }
+
+  </script>
 </body>
 </html>
