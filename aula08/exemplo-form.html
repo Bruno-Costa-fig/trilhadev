@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo formulário</title>
+</head>
+<body>
+  <form>
+    <label for="nome">Nome:</label>
+    <input 
+      type="text" 
+      id="nome" 
+      name="nome" 
+      placeholder="Digite seu nome" />
+
+    <label for="curso">Curso:</label>
+    <input 
+      type="text" 
+      id="curso" 
+      name="curso" 
+      placeholder="Digite seu curso" />
+    
+    <button type="submit">Enviar dados</button>
+  </form>
+
+  <script>
+
+    /* PASSO A PASSO PARA USAR O FORM
+
+    1 - [X] FAZ O GET DO ELEMENTO FORM
+    2 - [X] ADICIONA NO FORM O EVENTO LISTENER
+      2.1 - [X] NO EVENT LISTENER DIGA O NOME DO EVENTO
+      2.2 - [X] DEPOIS PASSE UMA FUNÇÃO ANÔNIMA PARA RECEBER O EVENTO COMO PARÂMETRO
+      2.3 - [X] USE O PREVENT DEFAULT NO EVENTO RECEBIDO COMO PARAMETRO
+      2.4 - [X] CHAME A FUNÇÃO QUE QUISER
+    3 - [X] CRIE A FUNÇÃO E PEGUE OS DADOS DO FORM
+    4 - [X] SEJA FELIZ 
+    */
+
+    const form = document.querySelector("form"); // 1
+    form.addEventListener("submit", function (evento) { // 2, 2.1, 2.2
+      evento.preventDefault() // 2.3
+
+      chamaOla() // 2.4
+    })
+
+    function chamaOla(){ // 3
+      const nome = document.getElementById("nome").value;
+
+      alert(`Olá ${nome}!`)
+    }
+  </script>
+</body>
+</html>

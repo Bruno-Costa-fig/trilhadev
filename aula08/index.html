@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="titulo">Aula sobre DOM</h1>
+  <p id="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illum laborum odit nam natus voluptatum doloribus autem tempora repudiandae impedit officiis magni atque iure nemo dignissimos et, unde ea harum!</p>
+  <button onclick="alterarTexto()">Alterar texto</button>
+
+  <div id="div-teste" style="width: 200px; height: 200px; background-color: antiquewhite;">teste</div>
+  <button onclick="alterarCor()">Alterar cor</button>
+  <button onclick="centralizar()">Centralizar</button>
+  <button onclick="descentralizar()">Descentralizar</button>
+
+  <script>
+    const h1 = document.getElementById("titulo");
+
+    const paragrafo = document.getElementById("paragrafo")
+
+    function alterarTexto(){
+      paragrafo.innerText = "Exemplo de alteração de texto via DOM"
+      // paragrafo.innerHTML = `
+      //   <div>
+      //     Exemplo de alteração de texto via DOM
+      //   </div>
+      //   <ul>
+      //     <li>Item da lista</li>
+      //   </ul>
+      // `
+    }
+
+    const divCor = document.querySelector("#div-teste")
+    console.log(paragrafo)
+
+    function alterarCor(){
+      divCor.style.background = "red";
+    }
+
+    function centralizar(){
+      divCor.classList.add("centralizar");
+    }
+    
+    function descentralizar(){
+      divCor.classList.remove("centralizar");
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.centralizar {
+  text-align: center;
+  font-weight: bold;
+  background-color: aquamarine !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: yellow;
+}
